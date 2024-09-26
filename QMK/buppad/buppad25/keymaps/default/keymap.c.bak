@@ -1,0 +1,310 @@
+/* Copyright 2024 ClownFish (@clownfish-og)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#include QMK_KEYBOARD_H
+#include "buppad_common.h"
+enum custom_keycodes {
+    CAPGEN = QK_KB_0,
+    ACID,
+    ash,
+    ayo,
+    BACKDOOR,
+    balloon,
+    bart,
+    bassface,
+    BEARDDANCE,
+    bigbrain,
+    BITS,
+    bob,
+    boomer,
+    broc,
+    BUG,
+    BUP,
+    BUPS,
+    bupwad,
+    call,
+    CATDANCE,
+    cheers,
+    CHEESE,
+    CHEFKISS,
+    clouds,
+    CROWN,
+    DIDDY,
+    DISCO,
+    doit,
+    DONUT,
+    dragon,
+    DRUMS,
+    DUCKDANCE,
+    DUCKHEAD,
+    DYE,
+    ee,
+    EYE,
+    fire,
+    flute,
+    FREAKOUT,
+    FROG,
+    goose,
+    grogu,
+    headout,
+    heart,
+    horn,
+    id,
+    jawnessa,
+    jelly,
+    KEKW,
+    keys,
+    lighter,
+    LOVE,
+    MOOSE,
+    PATBANG,
+    PLUG,
+    rave,
+    REVERSE,
+    rump,
+    saber,
+    salute,
+    sh.
+    SLAY,
+    smirk,
+    spooky,
+    sweaty,
+    THANKS,
+    thing,
+    TIEDYE,  //need image
+    tinfoil,
+    up,  //need image
+    uwu,
+    water,
+    wink,
+    wiz,
+    wook,
+    wub,
+    ZEJIBO,
+    zeldabup
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case CAPGEN:
+            if (record->event.pressed) {
+                SEND_STRING(SS_LCTL("acvvvvvvvvvv"));
+            }
+            return false;
+        case BUP:
+            if (record->event.pressed) {
+                SEND_STRING(" bupBUP ");
+            }
+            return false;
+        case DISCO:
+            if (record->event.pressed) {
+                SEND_STRING(" bupDisco ");
+            }
+            return false;
+        case FREAKOUT:
+            if (record->event.pressed) {
+                SEND_STRING(" bupFreakout ");
+            }
+            return false;
+        case DUCKDANCE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupDUCKDANCE ");
+            }
+            return false;
+        case KEKW:
+            if (record->event.pressed) {
+                SEND_STRING(" bupKekw ");
+            }
+            return false;
+        case SLAY:
+            if (record->event.pressed) {
+                SEND_STRING(" bupSlay ");
+            }
+            return false;
+        case BUG:
+            if (record->event.pressed) {
+                SEND_STRING(" bupBug ");
+            }
+            return false;
+        case DYE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupDye ");
+            }
+            return false;
+        case FROG:
+            if (record->event.pressed) {
+                SEND_STRING(" bupFROG ");
+            }
+            return false;
+        case ZEJIBO:
+            if (record->event.pressed) {
+                SEND_STRING(" bupZejibo ");
+            }
+            return false;
+        case DIDDY:
+            if (record->event.pressed) {
+                SEND_STRING(" bupDiddy ");
+            }
+            return false;
+        case DONUT:
+            if (record->event.pressed) {
+                SEND_STRING(" bupDonut ");
+            }
+            return false;
+        case EYE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupEye ");
+            }
+            return false;
+        case CATDANCE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupCATDANCE ");
+            }
+            return false;
+        case ACID:
+            if (record->event.pressed) {
+                SEND_STRING(" bupAcid ");
+            }
+            return false;
+        case CHEESE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupCheese ");
+            }
+            return false;
+        case BEARDDANCE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupBEARDDANCE ");
+            }
+            return false;
+        case REVERSE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupReverse  ");
+            }
+            return false;
+        case DRUMS:
+            if (record->event.pressed) {
+                SEND_STRING(" bupDrums ");
+            }
+            return false;
+        case PATBANG:
+            if (record->event.pressed) {
+                SEND_STRING(" bupPATBANG ");
+            }
+            return false;
+        case BUPS:
+            if (record->event.pressed) {
+                SEND_STRING(" bupBUPS ");
+            }
+            return false;
+        case BITS:
+            if (record->event.pressed) {
+                SEND_STRING(" bupBITS ");
+            }
+            return false;
+        case THANKS:
+            if (record->event.pressed) {
+                SEND_STRING(" bupTHANKS ");
+            }
+            return false;
+        case LOVE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupLOVE ");
+            }
+            return false;
+        case DUCKHEAD:
+            if (record->event.pressed) {
+                SEND_STRING(" bupDuckhead ");
+            }
+            return false;
+        case CROWN:
+            if (record->event.pressed) {
+                SEND_STRING(" bupCrown ");
+            }
+            return false;
+        case CHEFKISS:
+            if (record->event.pressed) {
+                SEND_STRING(" bupChefkiss ");
+            }
+            return false;
+        case MOOSE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupMOOSE ");
+            }
+            return false;
+        case BACKDOOR:
+            if (record->event.pressed) {
+                SEND_STRING(" bupBackDoor ");
+            }
+            return false;
+        case PLUG:
+            if (record->event.pressed) {
+                SEND_STRING(" bupPlug ");
+            }
+            return false;
+        case TIEDYE:
+            if (record->event.pressed) {
+                SEND_STRING(" bupTIEDYE ");
+            }
+            return false;
+        default:
+            return true; // Process all other keycodes normally
+    }
+}
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+    [0] = LAYOUT(
+        TO(1),    BUPS,     DUCKH,    BUG,      DUCKD,
+        DISCO,    DIDDY,    CAT,      SLAY,     BEARD,
+        BANG,     FREAK,    DRUMS,    FROG,     KEK,
+        BACKDR,   LOVE,     THANK,    ZEJIBO,   KC_NO,
+        BITS,     MOOSE,    BUP,      CAPGEN,   KC_ENT
+    ),
+    [1] = LAYOUT(
+        TO(0),    TO(5),    TO(2),    TO(3),    TO(4),
+        DYE,      DONUT,    EYE,      ACID,     CHEESE,
+        PLUG,     TIEDYE,   CROWN,    CHEF,     REV,
+        _______,  _______,  _______,  _______,  KC_NO,
+        _______,  _______,  _______,  _______,  KC_ENT
+    ),
+    [2] = LAYOUT(
+        TO(0),    TO(1),    TO(5),    TO(3),    TO(4),
+        _______,  _______,  _______,  _______,  _______,
+        _______,  _______,  _______,  _______,  _______,
+        _______,  _______,  _______,  _______,  KC_NO,
+        _______,  _______,  _______,  _______,  KC_ENT
+    ),
+    [3] = LAYOUT(
+        TO(0),    TO(1),    TO(2),    TO(5),    TO(4),
+        KC_PSCR,  KC_INS,   KC_HOME,  KC_PGUP,  _______,
+        KC_SCRL,  KC_DEL,   KC_END,   KC_PGDN,  KC_BSPC,
+        KC_PAUS,  KC_NO,    KC_UP,    KC_NO,    KC_NO,
+        KC_TAB,   KC_LEFT,  KC_DOWN,  KC_RIGHT, KC_ENT
+    ), 
+    [4] = LAYOUT(
+        TO(0),    TO(1),    TO(2),    TO(3),    TO(5),
+        KC_NUM,   KC_P7,    KC_P8,    KC_P9,    KC_PMNS,
+        KC_PSLS,  KC_P4,    KC_P5,    KC_P6,    KC_PPLS,
+        KC_PAST,  KC_P1,    KC_P2,    KC_P3,    KC_NO,
+        KC_LEFT,  KC_RGHT,  KC_P0,    KC_PDOT,  KC_ENT
+    ),
+    [5] = LAYOUT(
+        TO(0),    TO(1),    TO(2),    TO(3),    TO(4),
+        RGB_MOD,  RGB_VAI,  RGB_HUI,  RGB_SAI,  RGB_SPI,
+        RGB_RMOD, RGB_VAD,  RGB_HUD,  RGB_SAD,  RGB_SPD,
+        RGB_M_P,  RGB_M_B,  RGB_M_R,  RGB_M_SW, KC_NO,
+        KC_NO,    KC_NO,    KC_NO,    KC_NO,    RGB_TOG
+    ),
+};

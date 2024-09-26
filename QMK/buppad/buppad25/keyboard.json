@@ -1,0 +1,142 @@
+{
+    "manufacturer": "SpiderIsland",
+    "keyboard_name": "BUPpad25",
+    "maintainer": "clownfish-og",
+    "bootloader": "atmel-dfu",
+    "build": {
+        "lto": true
+    },
+    "diode_direction": "COL2ROW",
+    "dynamic_keymap": {
+        "layer_count": 6
+        "macro_count": 24
+    },
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "rgb_matrix": true
+    },
+    "matrix_pins": {
+        "cols": ["F5", "C7", "B7", "B2", "B4"],
+        "rows": ["E6", "F0", "D6", "D2", "B6"]
+    },
+    "processor": "atmega32u4",
+    "rgb_matrix": {
+        "animations": {
+            "alphas_mods": true,
+            "band_pinwheel_sat": true,
+            "band_pinwheel_val": true,
+            "band_sat": true,
+            "band_spiral_sat": true,
+            "band_spiral_val": true,
+            "band_val": true,
+            "breathing": true,
+            "cycle_all": true,
+            "cycle_left_right": true,
+            "cycle_out_in": true,
+            "cycle_pinwheel": true,
+            "cycle_spiral": true,
+            "cycle_up_down": true,
+            "gradient_left_right": true,
+            "gradient_up_down": true,
+            "none": true,
+            "rainbow_beacon": true,
+            "solid_color": true,
+            "solid_reactive": true,
+            "solid_reactive_cross": true,
+            "solid_reactive_nexus": true,
+            "solid_reactive_simple": true,
+            "solid_reactive_wide": true,
+            "solid_splash": true,
+            "splash": true
+        },
+        "center_point": [32, 32],
+        "default": {
+            "animation": "cycle_spiral"
+        },
+        "driver": "ws2812",
+        "layout": [
+            {"matrix": [2, 2], "x": 32, "y": 32, "flags": 1},
+            {"matrix": [2, 3], "x": 48, "y": 32, "flags": 1},
+            {"matrix": [3, 3], "x": 48, "y": 48, "flags": 1},
+            {"matrix": [3, 2], "x": 32, "y": 48, "flags": 1},
+            {"matrix": [3, 1], "x": 16, "y": 48, "flags": 1},
+            {"matrix": [2, 1], "x": 16, "y": 32, "flags": 1},
+            {"matrix": [1, 1], "x": 16, "y": 16, "flags": 1},
+            {"matrix": [1, 2], "x": 32, "y": 16, "flags": 1},
+            {"matrix": [1, 3], "x": 48, "y": 16, "flags": 1},
+            {"matrix": [1, 4], "x": 64, "y": 16, "flags": 4},
+            {"matrix": [2, 4], "x": 64, "y": 32, "flags": 4},
+            {"matrix": [3, 4], "x": 64, "y": 48, "flags": 4},
+            {"matrix": [4, 4], "x": 64, "y": 64, "flags": 4},
+            {"matrix": [4, 3], "x": 48, "y": 64, "flags": 4},
+            {"matrix": [4, 2], "x": 32, "y": 64, "flags": 4},
+            {"matrix": [4, 1], "x": 16, "y": 64, "flags": 4},
+            {"matrix": [4, 0], "x": 0, "y": 64, "flags": 4},
+            {"matrix": [3, 0], "x": 0, "y": 48, "flags": 4},
+            {"matrix": [2, 0], "x": 0, "y": 32, "flags": 4},
+            {"matrix": [1, 0], "x": 0, "y": 16, "flags": 4},
+            {"matrix": [0, 0], "x": 0, "y": 0, "flags": 8},
+            {"matrix": [0, 1], "x": 16, "y": 0, "flags": 4},
+            {"matrix": [0, 2], "x": 32, "y": 0, "flags": 4},
+            {"matrix": [0, 3], "x": 48, "y": 0, "flags": 4},
+            {"matrix": [0, 4], "x": 64, "y": 0, "flags": 4},
+            {"x": 44, "y": 0, "flags": 2},
+            {"x": 64, "y": 20, "flags": 2},
+            {"x": 64, "y": 44, "flags": 2},
+            {"x": 44, "y": 64, "flags": 2},
+            {"x": 20, "y": 64, "flags": 2},
+            {"x": 0, "y": 44, "flags": 2},
+            {"x": 0, "y": 20, "flags": 2},
+            {"x": 20, "y": 0, "flags": 2}
+        ],
+        "led_process_limit": 8,
+        "max_brightness": 200,
+        "pin": "D5",
+        "sleep": true
+    },
+    "url": "",
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x0025",
+        "vid": "0xF1F1"
+    },
+    "ws2812": {
+        "pin": "D5"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [0, 3], "x": 3, "y": 0},
+                {"matrix": [0, 4], "x": 4, "y": 0},
+                {"matrix": [1, 0], "x": 0, "y": 1},
+                {"matrix": [1, 1], "x": 1, "y": 1},
+                {"matrix": [1, 2], "x": 2, "y": 1},
+                {"matrix": [1, 3], "x": 3, "y": 1},
+                {"matrix": [1, 4], "x": 4, "y": 1},
+                {"matrix": [2, 0], "x": 0, "y": 2},
+                {"matrix": [2, 1], "x": 1, "y": 2},
+                {"matrix": [2, 2], "x": 2, "y": 2},
+                {"matrix": [2, 3], "x": 3, "y": 2},
+                {"matrix": [2, 4], "x": 4, "y": 2},
+                {"matrix": [3, 0], "x": 0, "y": 3},
+                {"matrix": [3, 1], "x": 1, "y": 3},
+                {"matrix": [3, 2], "x": 2, "y": 3},
+                {"matrix": [3, 3], "x": 3, "y": 3},
+                {"matrix": [3, 4], "x": 4, "y": 3},
+                {"matrix": [4, 0], "x": 0, "y": 4},
+                {"matrix": [4, 1], "x": 1, "y": 4},
+                {"matrix": [4, 2], "x": 2, "y": 4},
+                {"matrix": [4, 3], "x": 3, "y": 4},
+                {"matrix": [4, 4], "x": 4, "y": 4}
+            ]
+        }
+    }
+}
