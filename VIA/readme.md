@@ -1,22 +1,24 @@
-# BUPpad Via Files
+# BUPpad VIA Files
 
 This is the quickest and easiest way to get your BUPpad working
+*see our [Quick Start Guide](/docs/Quick_Start_Guide.pdf) for more detailed intructions*
 
-## buppad_default.hex firmware files
 
+## `buppad_default.hex`
+Pre-compiled BUPpad firmware file
 Flash this file to your keypad using QMK Toolbox to enable BUPpad functionality
 
 > [!CAUTION]
 > **Be sure to select the correct file for your keypad!**
-> Flashing the wrong file can result in permanent damage
+*Flashing the wrong firmware file can result in permanent damage*
 
 
-## BUPpad_via.json files
 
-Load definition file into VIA's design tab to allow real-time configuration of the BUPpad
-(see VIA_setupguide.pdf for more detailed intructions)
+## `BUPpad_via.json`
+VIA keyboard definition file
+Load this file into VIA's design tab to allow real-time configuration of the BUPpad
 
 
-## buppad.layout.json
-
-Restore default BUPpad layout by loading into VIA
+## `buppad.layout.json`
+Default BUPpad VIA layout
+Restore default BUPpad keymap layout by loading this file into VIA's SAVE + LOAD menu
