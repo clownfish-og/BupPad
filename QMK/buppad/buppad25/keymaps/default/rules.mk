@@ -1,4 +1,4 @@
 VIA_ENABLE = yes
 
-VPATH += keyboards/clownfish/common
+VPATH += keyboards/buppad/common
 SRC += buppad_common.c

@@ -44,11 +44,6 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
                 SEND_STRING("bupAscend ");
             }
             return false;
-        case ASH:
-            if (record->event.pressed) {
-                SEND_STRING("bupAsh ");
-            }
-            return false;
         case AYO:
             if (record->event.pressed) {
                 SEND_STRING("bupAyo ");
@@ -232,6 +227,11 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
         case FROG:
             if (record->event.pressed) {
                 SEND_STRING("bupFROG ");
+            }
+            return false;
+        case GLUTES:
+            if (record->event.pressed) {
+                SEND_STRING("bupGlutes ");
             }
             return false;
         case GOOSE:

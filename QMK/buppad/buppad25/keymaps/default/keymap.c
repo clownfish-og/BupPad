@@ -19,10 +19,10 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        TO(1),    CHEESE,   EYE,      BUG,      DUCKDANCE,
+        TO(1),    CHEESE,   EYE,      GLUTES,   DUCKDANCE,
         DISCO,    DIDDY,    CATDANCE, SLAY,     BEARDDANCE,
         PATBANG,  FREAKOUT, DRUMS,    FROG,     KEKW,
-        BACKDOOR, LOVE,     THANKS,   ZEJIBO,   BUPS,
+        BACKDOOR, LOVE,     THANKS,   ZEJIBO,   BUG,
         BITS,     MOOSE,    BUP,      CAPGEN5,  KC_ENT
     ),
     [1] = LAYOUT(
@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TO(0),    TO(1),    TO(5),    TO(3),    TO(4),
         DUCKHEAD, WIZ,      CHEFKISS, TINFOIL,  BIGBRAIN,
         CALL,     DOIT,     GROGU,    JAWNESSA, BART,
-        BROC,     BUPWAD,   ASH,      SPOOKY,   ZELDABUP,
+        BUPS,     BROC,     BUPWAD,   SPOOKY,   ZELDABUP,
         AYO,      ID,       SH,       EE,       KC_ENT
     ),
     [3] = LAYOUT(
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ), 
     [4] = LAYOUT(
         TO(0),    TO(1),    TO(2),    TO(3),    TO(5),
-        KC_NUM,   KC_P7,    KC_P8,    KC_P9,    KC_PMNS,
+        WAVE,     LIGHTER,  KC_P8,    KC_P9,    KC_PMNS,
         KC_PSLS,  KC_P4,    KC_P5,    KC_P6,    KC_PPLS,
         KC_PAST,  KC_P1,    KC_P2,    KC_P3,    KC_EQL,
         KC_LEFT,  KC_RGHT,  KC_P0,    KC_PDOT,  KC_ENT
