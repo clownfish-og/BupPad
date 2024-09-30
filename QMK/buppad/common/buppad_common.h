@@ -30,7 +30,7 @@ enum custom_keycodes {
     CAPGEN5 = QK_KB_0,
     CAPGEN8,
     CAPGEN10,
-    ACID,
+    ACID, //begin bup emotes
     ASCEND,
     AYO,
     BACKDOOR,
@@ -110,7 +110,32 @@ enum custom_keycodes {
     WOOK,
     WUB,
     ZEJIBO,
-    ZELDABUP
+    ZELDABUP, //end bup emotes
+    BIBLETHUMP, //begin twitch emotes
+    BOP,
+    BOPBOP,
+    DINODANCE,
+    GLITCHLIT,
+    GOATEMOTEY,
+    GOLDPLZ,
+    KAPPA,
+    KREYGASM,
+    MODLOVE,
+    NOTLIKETHIS,
+    POWERUPL,
+    POWERUPR,
+    RIPPEPPERONIS,
+    SABAPING,
+    SINGSMIC,
+    SINGSNOTE,
+    STINKYCHEESE,
+    TOMBRAID,
+    TWITCHCONHYPE,
+    TWITCHLIT,
+    TWITCHRAID,
+    UNITY,
+    VOTENAY,
+    VOTEYEA //end twitch emotes
 };
 
 bool process_record_bup(uint16_t keycode, keyrecord_t *record);

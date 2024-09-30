@@ -34,7 +34,7 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
                 SEND_STRING(SS_LCTL("acvvvvvvvvvv"));
             }
             return false;
-        case ACID:
+        case ACID: // begin bup emotes
             if (record->event.pressed) {
                 SEND_STRING("bupAcid ");
             }
@@ -438,7 +438,132 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
             if (record->event.pressed) {
                 SEND_STRING("bupZELDABUP ");
             }
+            return false; // end bup emotes
+        case BIBLETHUMP: // begin twitch emotes
+            if (record->event.pressed) {
+                SEND_STRING("BibleThump ");
+            }
             return false;
+        case BOP:
+            if (record->event.pressed) {
+                SEND_STRING("BOP ");
+            }
+            return false;
+        case BOPBOP:
+            if (record->event.pressed) {
+                SEND_STRING("BopBop ");
+            }
+            return false;
+        case DINODANCE:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case GLITCHLIT:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case GOATEMOTEY:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case GOLDPLZ:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case KAPPA:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case KREYGASM:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case MODLOVE:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case NOTLIKETHIS:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case POWERUPL:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case POWERUPR:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case RIPPEPPERONIS:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case SABAPING:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case SINGSMIC:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case SINGSNOTE:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case STINKYCHEESE:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case TOMBRAID:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case TWITCHCONHYPE:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case TWITCHLIT:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case TWITCHRAID:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case UNITY:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case VOTENAY:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false;
+        case VOTEYEA:
+            if (record->event.pressed) {
+                SEND_STRING("");
+            }
+            return false; // end twitch emotes
         default:
             return true; // Process all other keycodes normally
     }
