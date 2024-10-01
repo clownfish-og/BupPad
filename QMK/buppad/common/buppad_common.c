@@ -326,7 +326,7 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
             return false;
         case REVERSE:
             if (record->event.pressed) {
-                SEND_STRING("bupReverse  ");
+                SEND_STRING("bupReverse ");
             }
             return false;
         case RUMP:
@@ -456,112 +456,112 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
             return false;
         case DINODANCE:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("DinoDance ");
             }
             return false;
         case GLITCHLIT:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("GlitchLit ");
             }
             return false;
         case GOATEMOTEY:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("GoatEmotey ");
             }
             return false;
         case GOLDPLZ:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("GoldPLZ ");
             }
             return false;
         case KAPPA:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("Kappa ");
             }
             return false;
         case KREYGASM:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("Kreygasm ");
             }
             return false;
         case MODLOVE:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("ModLove ");
             }
             return false;
         case NOTLIKETHIS:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("NotLikeThis ");
             }
             return false;
         case POWERUPL:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("PowerUpL ");
             }
             return false;
         case POWERUPR:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("PowerUpR ");
             }
             return false;
-        case RIPPEPPERONIS:
+        case RIPEPPERONIS:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("riPepperonis ");
             }
             return false;
         case SABAPING:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("SabaPing ");
             }
             return false;
         case SINGSMIC:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("SingsMic ");
             }
             return false;
         case SINGSNOTE:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("SingsNote ");
             }
             return false;
         case STINKYCHEESE:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("StinkyCheese ");
             }
             return false;
         case TOMBRAID:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("TombRaid ");
             }
             return false;
         case TWITCHCONHYPE:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("TwitchConHYPE ");
             }
             return false;
         case TWITCHLIT:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("TwitchLit ");
             }
             return false;
         case TWITCHRAID:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("twitchRaid ");
             }
             return false;
         case UNITY:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("TwitchUnity ");
             }
             return false;
         case VOTENAY:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("VoteNay ");
             }
             return false;
         case VOTEYEA:
             if (record->event.pressed) {
-                SEND_STRING("");
+                SEND_STRING("VoteYea ");
             }
             return false; // end twitch emotes
         default:

@@ -124,7 +124,7 @@ enum custom_keycodes {
     NOTLIKETHIS,
     POWERUPL,
     POWERUPR,
-    RIPPEPPERONIS,
+    RIPEPPERONIS,
     SABAPING,
     SINGSMIC,
     SINGSNOTE,
