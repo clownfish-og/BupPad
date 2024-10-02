@@ -6,7 +6,7 @@ This is the quickest and easiest way to get your BUPpad working
 ----
 
 ## Pre-compiled BUPpad firmware file  
-### `buppad_default.hex`
+### `buppad##_[keymap].hex`
 Flash this file to your keypad using QMK Toolbox to enable BUPpad functionality
 
 > [!CAUTION]
@@ -16,11 +16,11 @@ Flash this file to your keypad using QMK Toolbox to enable BUPpad functionality
 ----
 
 ## VIA keyboard definition file  
-### `BUPpad_via.json`
+### `BUPpad##_via.json`
 Load this file into VIA's "DESIGN" tab to allow real-time configuration of the BUPpad
 
 ----
 
 ## Default BUPpad VIA layout  
-### `buppad.layout.json`
+### `buppad##_[keymap].layout.json`
 Load this file into VIA's "SAVE + LOAD" menu to restore the default BUPpad keymap layout
