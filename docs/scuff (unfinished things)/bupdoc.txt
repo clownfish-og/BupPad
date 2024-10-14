@@ -1,0 +1,40 @@
+BUPpad25
+A 25-key macropad for Patrick Richards Twitch emotes
+using a Winry25tc keypad with custom QMK firmware and configurable with VIA
+
+1) Hardware
+The harware is sourced from AliExpress, although it can also be purchased through re-sellers on ebay, etc.
+The keypad is the Winry25, available from the SpiderIsland Tech Co., Ltd Store on AliExpress
+                    <insert image>
+There are several configurations of this keypad available under different listings, including different case colors, lighting options, switches, and keycaps.
+    The switch options provided can block a lot of the light from the RGB backlighting making it appear dim
+    The keycaps offered have standard legends or are blank
+I recommend getting a version with lights and without switches or keycaps
+    https://www.aliexpress.us/item/3256803335473804.html
+                        <insert image>
+I recommend using "relegendable" keycaps, they have a clear plastic window on the top of them where you can insert a paper legend underneath.
+There are many different styles of relegendable keycaps. I have provided legend templates for the ones shown here
+budget:
+    https://www.aliexpress.us/item/3256806548859718.html                https://www.aliexpress.us/item/3256807390826342.html
+                    <insert image>                                                      <insert image>
+premium:
+    https://kbdfans.com/search?type=product&options%5Bprefix%5D=last&q=relegendable
+            <insert image>                        <insert image>
+    GMK or similar
+    
+RGB-friendly switches
+budget:
+    https://milktooth.com/products/switches/g-pro-3-black                https://milktooth.com/products/switches/g-pro-3-yellow  
+                    <insert image>                                                      <insert image>
+    https://milktooth.com/products/switches/g-pro-3-red                  https://milktooth.com/products/switches/g-pro-3-brown
+                    <insert image>                                                      <insert image>
+premium:
+    https://milktooth.com/products/switches?switches_table%5BrefinementList%5D%5Bswitches_brand.brand%5D%5B0%5D=TTC
+    
+2) Software
+The firmware for the BUPpad25 can be flashed to the keypad using QMK Toolbox
+The lastest release of QMK Toolbox can be found on the QMK github page
+    https://github.com/qmk/qmk_toolbox
+Scroll to the bottom of the readme and choose your preferred version to download according to your OS
+
+

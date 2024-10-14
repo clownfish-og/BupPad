@@ -34,7 +34,7 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
                 SEND_STRING(SS_LCTL("acvvvvvvvvvv"));
             }
             return false;
-        case ACID: // begin bup emotes
+        case ACID:       // begin bup emotes
             if (record->event.pressed) {
                 SEND_STRING("bupAcid ");
             }
@@ -439,12 +439,7 @@ bool process_record_bup(uint16_t keycode, keyrecord_t *record) {
                 SEND_STRING("bupZELDABUP ");
             }
             return false; // end bup emotes
-        case BIBLETHUMP: // begin twitch emotes
-            if (record->event.pressed) {
-                SEND_STRING("BibleThump ");
-            }
-            return false;
-        case BOP:
+        case BOP:        // begin twitch emotes
             if (record->event.pressed) {
                 SEND_STRING("BOP ");
             }
