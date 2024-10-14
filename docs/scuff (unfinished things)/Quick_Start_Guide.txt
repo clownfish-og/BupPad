@@ -1,0 +1,14 @@
+1. Set up a QMK build environment https://docs.qmk.fm/newbs_getting_started
+2. Go to https://github.com/clownfish-og/BUPpad and download the repository as a zip file
+3. Unzip the contents, copy the folder `BUPpad/QMK/buppad` and paste it into to your `qmk_firmware/keyboards` folder created in step 1
+2. Edit the desired files in the text editor or IDE of your choice
+4. Open the MSYS terminal and `cd` to your `qmk_firmware` directory
+5. Compile your new firmware with `make buppad/buppad25:twitch` or `qmk compile -kb buppad/buppad25 -km twitch` https://docs.qmk.fm/newbs_building_firmware#build-your-firmware
+6. flash https://docs.qmk.fm/newbs_flashing
+
+The firmware for the BUPpad can be flashed to the keypad using QMK Toolbox
+The lastest release of QMK Toolbox can be found on the QMK github page
+    https://github.com/qmk/qmk_toolbox
+Scroll to the bottom of the readme and choose your preferred version to download according to your OS
+
+7. Load the via json for further configuration. (see via guide pdf)
