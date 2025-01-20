@@ -18,8 +18,9 @@
 #include "buppad_common.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+
     [0] = LAYOUT(
-        TO(1),      CHEESE,     EYE,        GLUTES,     DUCKDANCE,
+        TO(1),      CHEESE,     AMNESIA,    GROOVY,     DUCKDANCE,
         DISCO,      DIDDY,      CATDANCE,   SLAY,       BEARDDANCE,
         PATBANG,    FREAKOUT,   DRUMS,      FROG,       KEKW,
         BACKDOOR,   LOVE,       THANKS,     ZEJIBO,     BUG,
@@ -27,31 +28,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [1] = LAYOUT(
         TO(0),      TO(5),      TO(2),      TO(3),      TO(4),
-        THING,      DONUT,      DYE,        SMIRK,      REVERSE,
-        RUMP,       ACID,       CLOUDS,     WATER,      WINK,
+        WATER,      DONUT,      DYE,        SMIRK,      EXCUSEME,
+        RUMP,       TINFOIL,    CLOUDS,     SALT,       WINK,
         BALLOON,    HEART,      ASCEND,     JELLY,      PLUG,
-        RAVE,       CROWN,      TIEDYE,     DRAGON,     KC_ENT
+        RAVE,       CROWN,      TIEDYE,     DRAGON,     SUS
     ),
     [2] = LAYOUT(
         TO(0),      TO(1),      TO(5),      TO(3),      TO(4),
-        DUCKHEAD,   WIZ,        CHEFKISS,   TINFOIL,    BIGBRAIN,
+        DUCKHEAD,   WIZ,        CHEFKISS,   MAPLE,      BIGBRAIN,
         CALL,       DOIT,       GROGU,      JAWNESSA,   BART,
-        BUPS,       BROC,       BUPWAD,     SPOOKY,     ZELDABUP,
-        AYO,        ID,         SH,         EE,         KC_ENT
+        BUPS,       BROC,       BUPWAD,     LUIGIBUP,   ZELDABUP,
+        AYO,        TUNE,       SH,         EE,         ID
     ),
     [3] = LAYOUT(
         TO(0),      TO(1),      TO(2),      TO(5),      TO(4),
-        BASSFACE,   BOB,        SABER,      UWU,        UP,
+        BASSFACE,   BOB,        LIGHTER,    UWU,        UP,
         NOD,        GOOSE,      BOOMER,     WUB,        WOOK,
         HEADOUT,    RAINBOW,    SALUTE,     SWEATY,     HORN,
-        FLUTE,      FIRE,       CHEERS,     KEYS,       KC_ENT
-    ), 
+        FLUTE,      FIRE,       CHEERS,     KEYS,       CHILLGUY
+    ),
     [4] = LAYOUT(
         TO(0),      TO(1),      TO(2),      TO(3),      TO(5),
-        WAVE,       LIGHTER,    GLITCHLIT,  TWITCHLIT,  NOTLIKETHIS,
-        GOLDPLZ,    KREYGASM,   POWERUPL,   POWERUPR,   TWITCHCONHYPE,
-        SINGSMIC,   SINGSNOTE,  TOMBRAID,   TWITCHRAID, GOATEMOTEY,
-        BOPBOP,     DINODANCE,  UNITY,      KAPPA,      KC_ENT
+        BDANCE,     BMINGO,     BMONKEY,    BPUG,       BUGH,
+        KGLUTES,    KHI,        KHUG,       KLEI,       KLOVE,
+        KCLAP,      KGATO,      KGGS,       KRDNC,      KSMUG,
+        BOPBOP,     DINODANCE,  UNITY,      KAPPA,      TOMBRAID
     ),
     [5] = LAYOUT(
         TO(0),      TO(1),      TO(2),      TO(3),      TO(4),

@@ -1,0 +1,4 @@
+VIA_ENABLE = yes
+#CONSOLE_ENABLE = yes
+#RGB_MATRIX_ENABLE = no
+#LTO_ENABLE = no

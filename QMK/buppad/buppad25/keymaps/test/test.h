@@ -27,102 +27,106 @@
 
 #include "quantum_keycodes.h"
 
-
+typedef struct {
+    uint16_t keycode;
+    const char *string;
+} keycode_string_t;
 
 enum custom_keycodes {
     CAPGEN5 = QK_KB_0,
     CAPGEN8,
     CAPGEN10,
-    AMNESIA, //begin bup emotes
+    ACID, //begin T1 bup emotes
     AYO,
-    BACKDOOR,
-    BALLOON,
-    BART,
     BEARDDANCE,
-    BIGBRAIN,
     BITS,
     BOOMER,
-    BUG,
     BUP,
     BUPS,
     BUPWAD,
-    CALL,
+    BACKDOOR,
+    BALLOON,
+    BART,
+    BIGBRAIN,
+    BUG,
     CATDANCE,
     CHEERS,
+    CALL,
     CHEESE,
     CHEFKISS,
     CROWN,
+    DOIT,
+    DUCKDANCE,
     DIDDY,
     DISCO,
-    DOIT,
     DONUT,
     DRUMS,
-    DUCKDANCE,
     DUCKHEAD,
     DYE,
     EE,
-    FIRE,
+    EYE,
     FLUTE,
-    FREAKOUT,
     FROG,
+    FIRE,
+    FREAKOUT,
+    GLUTES,
     GROGU,
-    GROOVY,
     HEADOUT,
     HORN,
     ID,
-    KEKW,
     KEYS,
-    LIGHTER,
+    KEKW,
     LOVE,
-    LUIGIBUP,
+    LIGHTER,
     MOOSE,
     PATBANG,
     PLUG,
     SALUTE,
     SH,
     SLAY,
+    SPOOKY,
     SWEATY,
     THANKS,
     WOOK,
     WUB,
-    ZEJIBO,
     ZELDABUP,
-    BROC, //begin tier 2000 emotes
+    ZEJIBO, //end T1 bup emotes
+    BROC, //begin T2 bup emotes
     CLOUDS,
     GOOSE,
     HEART,
     JAWNESSA,
     RAVE,
-    SALT,
-    TINFOIL,
+    SABER,
+    THING,
     WATER,
-    WIZ,
-    BASSFACE, //begin tier 3000 emotes
+    WIZ, //end T2 bup emotes
+    BASSFACE, //begin T3 bup emotes
     BOB,
-    CHILLGUY,
     DRAGON,
     JELLY,
     MAPLE,
     RUMP,
     SMIRK,
+    TINFOIL,
     UWU,
-    WINK,
-    ABDUCKTION, //begin bitstier emotes
-    ASCEND,
+    WINK, //end T3 bup emotes
     ASHDUCKEM,
+    ABDUCKTION,
+    ASCEND,
+    CHICK,
     EXCUSEME,
     FANCYDUCK,
     GOLD,
     HEADPHONES,
-    KTULUEHUG,
     RAINBOW,
     SMUG,
     SUS,
-    NOD, //begin follower emotes
+    NOD, //begin follower bup emotes
     TIEDYE,
     TUNE,
     UP,
-    WAVE, //end bup emotes
+    WAVE, //end follower bup emotes
     BOP, //begin twitch emotes
     BOPBOP,
     DINODANCE,
@@ -135,6 +139,8 @@ enum custom_keycodes {
     NOTLIKETHIS,
     POWERUPL,
     POWERUPR,
+    RIPEPPERONIS,
+    SABAPING,
     SINGSMIC,
     SINGSNOTE,
     STINKYCHEESE,
@@ -150,6 +156,14 @@ enum custom_keycodes {
     BMONKEY,
     BPUG,
     BUGH,
+    GBIRDGROOVE,
+    GCATDANCE,
+    GFUNNYCATDANCE,
+    GJAMMIN,
+    GKITTYDAB,
+    GKITTYGROOVE,
+    GNUMBERONE,
+    GRAVEKITTY,
     KCLAP,
     KGATO,
     KGGS,
@@ -159,25 +173,11 @@ enum custom_keycodes {
     KLEI,
     KLOVE,
     KRDNC,
-    KSMUG, //end fam emotes
+    KSMUG,
+    KWELP //end fam emotes
 };
 
-
-#define FIRST_EMOTE_KEYCODE AMNESIA
-#define LAST_BUP_KEYCODE WAVE
-#define FIRST_BEX_KEYCODE BDANCE
-#define LAST_BEX_KEYCODE BUGH
-#define FIRST_KTLU_KEYCODE KCLAP
-#define LAST_KTLU_KEYCODE KSMUG
-#define LAST_EMOTE_KEYCODE KSMUG
-#define BUP_PREFIX "bup"
-#define BEX_PREFIX "bexfro"
-#define KTLU_PREFIX "ktulue"
-#define MAX_EMOTE_LEN 32
-
-typedef struct {
-    uint16_t keycode;
-    const char *suffix;
-} keycode_string_compressed_t;
+#define FIRST_EMOTE_KEYCODE ACID
+#define LAST_EMOTE_KEYCODE KWELP
 
 bool process_record_bup(uint16_t keycode, keyrecord_t *record);
