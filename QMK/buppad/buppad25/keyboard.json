@@ -8,16 +8,16 @@
     },
     "diode_direction": "COL2ROW",
     "dynamic_keymap": {
-        "layer_count": 6
+        "layer_count": 8
     },
     "features": {
         "bootmagic": true,
-        "command": false,
-        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "rgb_matrix": true
+        "rgb_matrix": true,
+        "space_cadet": false,
+        "magic": false
     },
     "matrix_pins": {
         "cols": ["F5", "C7", "B7", "B2", "B4"],
@@ -57,7 +57,8 @@
         "hue steps": 16,
         "default": {
             "animation": "cycle_spiral",
-            "val": 50
+            "val": 50,
+            "hue": 160
         },
         "driver": "ws2812",
         "layout": [
